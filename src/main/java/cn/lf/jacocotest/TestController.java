@@ -4,17 +4,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class WebController {
-    @RequestMapping("/web1")
+public class TestController {
+    @RequestMapping("/test1")
     public String test1(String name){
         String str = "";
-        if("贝克汉姆".equalsIgnoreCase(name)){
+        if("韩信".equalsIgnoreCase(name)){
             str = name+"到此一游";
-        }else if("C罗".equalsIgnoreCase(name)){
+        }else if("赵云".equalsIgnoreCase(name)){
             str = name+"到此一游";
-        }else if("马拉多纳".equalsIgnoreCase(name)){
+        }else if("安琪拉".equalsIgnoreCase(name)){
             str = name+"到此一游";
-        }else if("高俅".equalsIgnoreCase(name)){
+        }else if("李白".equalsIgnoreCase(name)){
             str = name+"到此一游";
         }
         return str;
