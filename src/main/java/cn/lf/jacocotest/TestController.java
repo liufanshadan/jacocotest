@@ -19,4 +19,11 @@ public class TestController {
         }
         return str;
     }
+    @RequestMapping("/test2")
+    public String test2(String name){
+        int i = 2;
+        int j = 2;
+        int k = i+j;
+        return "2+2="+k;
+    }
 }

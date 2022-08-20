@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
     @RequestMapping("/demo1")
-    public String test1(String name){
+    public String demo1(String name){
         String str = "";
         if("乔丹".equalsIgnoreCase(name)){
             str = name+"到此一游";
@@ -18,5 +18,12 @@ public class DemoController {
             str = name+"到此一游";
         }
         return str;
+    }
+    @RequestMapping("/demo2")
+    public String demo2(String name){
+        int i = 1;
+        int j = 1;
+        int k = i+j;
+        return "1+1="+k;
     }
 }
